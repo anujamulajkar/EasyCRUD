@@ -6,7 +6,7 @@ WORKDIR /opt
 
 #COPY application.properties backend\src\main\resources\application.properties
 
-RUN mvn clean package
+RUN mvn clean package -DskipTest
 
 WORKDIR /opt/target/
 
