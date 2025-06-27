@@ -2,7 +2,10 @@ FROM maven:3.8.3-openjdk-17
 COPY . /opt/
 WORKDIR /opt 
 
+RUN rm -rf backend\src\main\resources\application.properties
+
 COPY application.properties backend\src\main\resources\application.properties
+
 RUN mvn clean package
 
 WORKDIR /opt/target/
