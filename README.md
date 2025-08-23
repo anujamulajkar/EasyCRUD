@@ -55,4 +55,18 @@ EXIT;
 2. DB_USER
 3. DB_PASS
 4. DB_PORT
+
 5. DB_NAME
+
+
+
+
+
+
+
+
+
+
+
+
+   Test
